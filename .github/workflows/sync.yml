@@ -12,13 +12,13 @@ on:
         required: true
         default: 'registry.cn-hangzhou.aliyuncs.com'
       source_repo:
-        description: '仓库 (格式 repo)'
+        description: '仓库 (镜像名称)'
         required: true
         default: ''
       destination_scope:
-        description: '目标Scope (格式 scope)'
+        description: '目标仓库格式 (common:镜像名-版本号)'
         required: true
-        default: ''
+        default: 'common:'
 
 jobs:
   sync:
